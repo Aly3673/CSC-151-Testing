@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class Concrete_Pad_Estimator extends JFrame {
     private JTextField txtProjectName, txtLocation, txtDueDate;
@@ -10,7 +12,7 @@ public class Concrete_Pad_Estimator extends JFrame {
 
     public Concrete_Pad_Estimator() {
         setTitle("Concrete Pad Construction - Project Entry");
-        setSize(450, 400);
+        setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(8, 2, 10, 10));
